@@ -17,10 +17,22 @@ Includes:
 
 The `agents` folder from the local skill source is intentionally not included.
 
-## Install
+## Install In Codex
 
-Copy the skill folder into your Codex skills directory:
+No manual copy command is needed. In Codex, ask:
 
-```powershell
-Copy-Item -Recurse .\mobile-app-ux-polish "$env:USERPROFILE\.codex\skills\mobile-app-ux-polish"
+```text
+Install the Codex skill from GitHub repo sarvottam-bhagat/Skills at path mobile-app-ux-polish.
 ```
+
+Codex can install skills from GitHub repo paths using its built-in skill installer. After installation, restart Codex so the new skill is picked up.
+
+## Use In A Project
+
+Once installed, use it in any mobile app project by asking Codex something like:
+
+```text
+Use the mobile-app-ux-polish skill to audit this app and suggest high-impact UX polish improvements.
+```
+
+Skills are installed for Codex to reuse across projects; they are not normal app dependencies that need to be committed into every project repository.
